@@ -27,6 +27,22 @@ Rails generates a _ton_ of boilerplate. For your convenience, here's a list of t
 - `db/migrate/*.rb`
 - `db/seeds.rb`
 
+## Deployment
+
+[Heroku](http://www.heroku.com) is the easiest way to get your app up and running. For full instructions on how to get started, check out ["Getting Started with Rails 3.x on Heroku"](https://devcenter.heroku.com/articles/rails3).
+
+Once you've installed the [Heroku Toolbelt](https://toolbelt.heroku.com), and have a Heroku account, enter the following commands from the project directory:
+
+```
+$ heroku create
+$ git push heroku master
+$ heroku run rake db:migrate
+```
+
+Take the URL from your newly-created Heroku app, and specify that as the webservice URL for your Passbook bundle.
+
+To send push notifications about changes in a user's pass, check out [houston](https://github.com/mattt/houston).
+
 ---
 
 ## Specification
