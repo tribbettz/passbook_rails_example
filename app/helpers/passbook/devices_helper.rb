@@ -1,0 +1,2 @@
+module Passbook::DevicesHelper
+end

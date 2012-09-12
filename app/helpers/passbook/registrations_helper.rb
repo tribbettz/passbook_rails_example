@@ -1,0 +1,2 @@
+module Passbook::RegistrationsHelper
+end
