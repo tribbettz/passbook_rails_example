@@ -8,6 +8,25 @@ Apple [provides a specification](https://developer.apple.com/library/prerelease/
 
 This project is an example implementation of this web service specification in Rails, and will serve the basis for a more comprehensive Rails generator in the near future.
 
+## Getting Started
+
+```
+$ git clone https://github.com/mattt/passbook_rails_example.git
+$ cd passbook_rails_example
+$ bundle
+$ rake db:create db:migrate db:seed
+$ rails s
+```
+
+## Points of Interest
+
+Rails generates a _ton_ of boilerplate. For your convenience, here's a list of the files that actually demonstrate the Passbook functionality:
+
+- `app/controllers/passbook/*.rb` 
+- `app/models/passbook/*.rb`
+- `db/migrate/*.rb`
+- `db/seeds.rb`
+
 ---
 
 ## Specification
